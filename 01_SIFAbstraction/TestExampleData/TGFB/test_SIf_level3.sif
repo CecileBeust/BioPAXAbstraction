@@ -1,0 +1,29 @@
+PPP1A	controls-state-change-of	ALK5
+PPP1CB	controls-state-change-of	ALK5
+MADH7	controls-state-change-of	ALK5
+PPP1R15A	controls-state-change-of	ALK5
+PPP1CC	controls-state-change-of	ALK5
+TGFBR3	controls-state-change-of	TGFB1
+TGFB2	controls-state-change-of	TGFB1
+UniProt:P37173 TGFBR2	controls-state-change-of	MADH3
+UniProt:P37173 TGFBR2	controls-state-change-of	SMAD2
+FUR	controls-state-change-of	TGFB1
+RNF55	controls-state-change-of	UniProt:P61081 UBE2M
+ZFYVE9	controls-state-change-of	MADH3
+ZFYVE9	controls-state-change-of	SMAD2
+TGFB1	controls-state-change-of	ALK5
+TGFB1	controls-state-change-of	MADH3
+TGFB1	controls-state-change-of	SMAD2
+UniProt:P37173 TGFBR2	controls-state-change-of	ALK5
+RNF55	controls-state-change-of	UniProt:P37173 TGFBR2
+TGFBR3	controls-state-change-of	ALK5
+TGFB2	controls-state-change-of	ALK5
+ALK5	controls-state-change-of	MADH3
+ALK5	controls-state-change-of	SMAD2
+TGFBR3	controls-state-change-of	FKBP1A
+TGFB2	controls-state-change-of	FKBP1A
+ZFYVE9	controls-state-change-of	ALK5
+UniProt:Q9NYA4 MTMR4	controls-state-change-of	MADH3
+UniProt:Q9NYA4 MTMR4	controls-state-change-of	SMAD2
+TGFBR3	controls-state-change-of	UniProt:P37173 TGFBR2
+TGFB2	controls-state-change-of	UniProt:P37173 TGFBR2

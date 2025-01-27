@@ -1,0 +1,18 @@
+(5Z,8Z,11Z,14Z)-icosa-5,8,11,14-tetraenoate	consumption-controlled-by	UniProt:P20292 ALOX5AP
+(5Z,8Z,11Z,14Z)-icosa-5,8,11,14-tetraenoate	consumption-controlled-by	LTC4S
+(5Z,8Z,11Z,14Z)-icosa-5,8,11,14-tetraenoate	consumption-controlled-by	LOG5
+dioxygen	consumption-controlled-by	UniProt:P20292 ALOX5AP
+dioxygen	consumption-controlled-by	LTC4S
+dioxygen	consumption-controlled-by	LOG5
+(5S)-hydroperoxy-(6E,8Z,11Z,14Z)-eicosatetraenoate	consumption-controlled-by	GPX4
+(5S)-hydroperoxy-(6E,8Z,11Z,14Z)-eicosatetraenoate	consumption-controlled-by	GPX2
+(5S)-hydroperoxy-(6E,8Z,11Z,14Z)-eicosatetraenoate	consumption-controlled-by	UniProt:P07203 GPX1
+glutathionate anion	consumption-controlled-by	GPX4
+glutathionate anion	consumption-controlled-by	GPX2
+glutathionate anion	consumption-controlled-by	UniProt:P07203 GPX1
+meadowlactone [ChEBI:132873]	consumption-controlled-by	PON1
+meadowlactone [ChEBI:132873]	consumption-controlled-by	PON3
+meadowlactone [ChEBI:132873]	consumption-controlled-by	PON2
+water [ChEBI:15377]	consumption-controlled-by	PON1
+water [ChEBI:15377]	consumption-controlled-by	PON3
+water [ChEBI:15377]	consumption-controlled-by	PON2

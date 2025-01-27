@@ -1,0 +1,224 @@
+UniProt:P37173 TGFBR2	controls-state-change-of	SMAD2
+MADH7	in-complex-with	NMA
+MADH7	in-complex-with	MAWD
+SMURF2	neighbor-of	NEDD4L
+UniProt:P37173 TGFBR2	in-complex-with	UniProt:P62979 RPS27A
+ALK5	controls-state-change-of	MADH3
+AD-019	neighbor-of	USP25
+SMAD2	in-complex-with	UniProt:P62987 UBA52
+TGFB2	controls-state-change-of	UniProt:P37173 TGFBR2
+ITGB1	neighbor-of	LTBP1
+MADH3	in-complex-with	UBB
+MADH3	in-complex-with	UBC
+UniProt:Q9HCE7 SMURF1	neighbor-of	UniProt:P62987 UBA52
+TGFB1	in-complex-with	LTBP1
+TGFBR3	controls-state-change-of	ALK5
+TGFB1	neighbor-of	TGFBR3
+TGFB1	neighbor-of	UniProt:Q9HCE7 SMURF1
+UniProt:P05106 ITGB3	neighbor-of	TGFB3
+UniProt:P37173 TGFBR2	in-complex-with	SMURF2
+PPP1R15A	in-complex-with	PPP1CB
+PPP1R15A	in-complex-with	PPP1CC
+PPP1R15A	in-complex-with	PPP1A
+MADH7	in-complex-with	SMURF2
+SMAD2	in-complex-with	SMAD4
+SMAD2	in-complex-with	STAG1
+UBB	in-complex-with	UBC
+UBC	in-complex-with	UBC
+ZFYVE9	in-complex-with	SMAD2
+ITGB1	neighbor-of	UniProt:P05106 ITGB3
+TGFB1	neighbor-of	FKBP1A
+SMURF2	neighbor-of	UniProt:P62987 UBA52
+ITGB8	neighbor-of	UniProt:P18564 ITGB6
+ITGB5	neighbor-of	UniProt:P18564 ITGB6
+ALK5	in-complex-with	NMA
+ALK5	in-complex-with	MAWD
+UniProt:P37173 TGFBR2	neighbor-of	UniProt:P61081 UBE2M
+ALK5	in-complex-with	NEDD4L
+MADH7	in-complex-with	NEDD4L
+UniProt:Q9HCE7 SMURF1	in-complex-with	XPO1
+ITGB1	neighbor-of	TGFB3
+MADH3	in-complex-with	UniProt:P62979 RPS27A
+ALK5	in-complex-with	MADH7
+MADH7	in-complex-with	UniProt:Q9HCE7 SMURF1
+TGFB2	controls-state-change-of	ALK5
+NEDD4L	neighbor-of	UniProt:P62979 RPS27A
+UBB	neighbor-of	UBB
+UBC	neighbor-of	UBB
+UBB	neighbor-of	UBC
+UBC	neighbor-of	UBC
+UniProt:Q9HCE7 SMURF1	neighbor-of	NEDD4L
+TGFB1	in-complex-with	UniProt:Q8N2S1 LTBP4
+TGFB1	neighbor-of	PPP1R15A
+ITGB8	neighbor-of	LTBP1
+ITGB5	neighbor-of	LTBP1
+TGFB1	neighbor-of	FUR
+MADH7	in-complex-with	UBB
+MADH7	in-complex-with	UBC
+SMURF2	neighbor-of	UniProt:P62979 RPS27A
+ITGB1	neighbor-of	ITGB8
+ITGB1	neighbor-of	ITGB5
+UniProt:Q9NYA4 MTMR4	controls-state-change-of	MADH3
+ITGB8	neighbor-of	ITGB5
+ITGB5	neighbor-of	ITGB5
+MADH7	in-complex-with	AD-019
+TGFB1	neighbor-of	UBB
+TGFB1	neighbor-of	UBC
+TGFB1	neighbor-of	PPP1CB
+TGFB1	neighbor-of	PPP1CC
+TGFB1	neighbor-of	PPP1A
+UniProt:P62979 RPS27A	neighbor-of	UniProt:P62987 UBA52
+TGFB1	neighbor-of	TGFB3
+UniProt:P05106 ITGB3	neighbor-of	UniProt:P18564 ITGB6
+PPP1R15A	controls-state-change-of	ALK5
+TGFB1	neighbor-of	ITGB8
+TGFB1	neighbor-of	ITGB5
+TGFB3	in-complex-with	UniProt:Q9NS15 LTBP3
+UniProt:P18564 ITGB6	neighbor-of	LTBP1
+ATP(4-)	used-to-produce	ADP trianion
+UniProt:P37173 TGFBR2	in-complex-with	RNF55
+UniProt:P37173 TGFBR2	in-complex-with	AD-019
+LTBP1	neighbor-of	UniProt:Q9NS15 LTBP3
+MADH3	in-complex-with	UniProt:P62987 UBA52
+UBB	neighbor-of	CHIP
+UBC	neighbor-of	CHIP
+TGFB1	neighbor-of	UniProt:P53708 ITGA8
+UniProt:P37173 TGFBR2	neighbor-of	FKBP1A
+UniProt:Q9NS15 LTBP3	neighbor-of	UniProt:Q14767 LTBP2
+ZFYVE9	in-complex-with	PPP1R15A
+ZFYVE9	in-complex-with	MADH7
+SMAD2	in-complex-with	UniProt:P62979 RPS27A
+PPP1CB	in-complex-with	PPP1A
+PPP1CC	in-complex-with	PPP1A
+PPP1A	in-complex-with	PPP1A
+UniProt:P37173 TGFBR2	in-complex-with	PPP1R15A
+MADH7	in-complex-with	PPP1CB
+MADH7	in-complex-with	PPP1CC
+MADH7	in-complex-with	PPP1A
+UniProt:P37173 TGFBR2	in-complex-with	TGFBR3
+TGFB1	controls-state-change-of	SMAD2
+TGFB1	neighbor-of	MADH7
+UBB	in-complex-with	AD-019
+UBC	in-complex-with	AD-019
+TGFB1	controls-state-change-of	ALK5
+ITGB1	in-complex-with	UniProt:P53708 ITGA8
+TGFB1	controls-state-change-of	MADH3
+ALK5	in-complex-with	ZFYVE9
+TGFB1	neighbor-of	SMURF2
+ALK5	in-complex-with	PPP1CB
+ALK5	in-complex-with	PPP1CC
+ALK5	in-complex-with	PPP1A
+UniProt:P37173 TGFBR2	in-complex-with	ZFYVE9
+TGFB1	neighbor-of	UniProt:P62987 UBA52
+NEDD8	neighbor-of	UniProt:P61081 UBE2M
+RNF55	neighbor-of	NEDD8
+ALK5	controls-state-change-of	SMAD2
+UniProt:P37173 TGFBR2	in-complex-with	MADH7
+ALK5	in-complex-with	FKBP1A
+UniProt:P37173 TGFBR2	in-complex-with	USP25
+MADH7	in-complex-with	XPO1
+UniProt:P05106 ITGB3	neighbor-of	UniProt:P53708 ITGA8
+ALK5	in-complex-with	UniProt:Q9HCE7 SMURF1
+UniProt:P37173 TGFBR2	controls-state-change-of	MADH3
+MADH7	controls-state-change-of	ALK5
+TGFB1	neighbor-of	ITGB1
+TGFB1	neighbor-of	UniProt:P62979 RPS27A
+TGFB2	controls-state-change-of	FKBP1A
+TGFBR3	controls-state-change-of	TGFB1
+NEDD4L	neighbor-of	UBB
+NEDD4L	neighbor-of	UBC
+ALK5	in-complex-with	UBB
+ALK5	in-complex-with	UBC
+LTBP1	in-complex-with	UniProt:P06756 ITGAV
+ZFYVE9	in-complex-with	MADH3
+UniProt:Q9NYA4 MTMR4	controls-state-change-of	SMAD2
+ALK5	in-complex-with	SMURF2
+UniProt:P18564 ITGB6	neighbor-of	UniProt:P53708 ITGA8
+MADH3	in-complex-with	CHIP
+MADH7	in-complex-with	USP25
+TGFB2	in-complex-with	LTBP1
+LTBP1	neighbor-of	UniProt:Q8N2S1 LTBP4
+MADH3	in-complex-with	UniProt:Q9NYA4 MTMR4
+MADH7	in-complex-with	UniProt:P62987 UBA52
+SMURF2	neighbor-of	UBB
+SMURF2	neighbor-of	UBC
+TGFB1	neighbor-of	TGFB2
+UniProt:Q9HCE7 SMURF1	neighbor-of	UniProt:P62979 RPS27A
+UniProt:P18564 ITGB6	neighbor-of	TGFB3
+ALK5	neighbor-of	TGFB2
+UniProt:P53708 ITGA8	neighbor-of	LTBP1
+TGFB1	neighbor-of	UniProt:P05106 ITGB3
+TGFB1	neighbor-of	USP25
+UniProt:P62987 UBA52	in-complex-with	AD-019
+TGFB2	neighbor-of	TGFB3
+TGFB1	neighbor-of	NEDD4L
+ITGB1	neighbor-of	UniProt:P18564 ITGB6
+UniProt:P62979 RPS27A	in-complex-with	AD-019
+ITGB8	neighbor-of	UniProt:P53708 ITGA8
+ITGB5	neighbor-of	UniProt:P53708 ITGA8
+TGFBR3	neighbor-of	TGFB2
+ITGB1	neighbor-of	UniProt:P06756 ITGAV
+UniProt:P37173 TGFBR2	in-complex-with	UniProt:P62987 UBA52
+MADH7	in-complex-with	PPP1R15A
+UniProt:P18564 ITGB6	neighbor-of	UniProt:P06756 ITGAV
+UniProt:P37173 TGFBR2	in-complex-with	UniProt:Q9HCE7 SMURF1
+ZFYVE9	controls-state-change-of	ALK5
+NMA	in-complex-with	MAWD
+MAWD	in-complex-with	MAWD
+TGFB1	neighbor-of	UniProt:P18564 ITGB6
+ALK5	in-complex-with	PPP1R15A
+ALK5	in-complex-with	USP25
+water [ChEBI:15377]	used-to-produce	[PO3(OH)](2-)
+FKBP1A	neighbor-of	TGFB2
+ALK5	in-complex-with	UniProt:P62987 UBA52
+SMAD2	in-complex-with	SMURF2
+ZFYVE9	in-complex-with	PPP1CB
+ZFYVE9	in-complex-with	PPP1CC
+ZFYVE9	in-complex-with	PPP1A
+UniProt:Q9NS15 LTBP3	neighbor-of	UniProt:Q8N2S1 LTBP4
+ALK5	in-complex-with	AD-019
+RNF55	controls-state-change-of	UniProt:P37173 TGFBR2
+TGFB2	in-complex-with	UniProt:Q9NS15 LTBP3
+TGFB1	neighbor-of	NMA
+TGFB1	neighbor-of	MAWD
+UniProt:P62979 RPS27A	neighbor-of	USP25
+UniProt:P37173 TGFBR2	in-complex-with	NEDD4L
+TGFB1	neighbor-of	UniProt:P37173 TGFBR2
+UniProt:P53708 ITGA8	neighbor-of	UniProt:P06756 ITGAV
+LTBP1	neighbor-of	UniProt:Q14767 LTBP2
+UniProt:P05106 ITGB3	neighbor-of	LTBP1
+ALK5	in-complex-with	UniProt:P62979 RPS27A
+UBB	neighbor-of	UBC
+UBC	neighbor-of	UBC
+TGFB1	in-complex-with	UniProt:P06756 ITGAV
+TGFB1	neighbor-of	ZFYVE9
+SMURF2	neighbor-of	UniProt:Q9HCE7 SMURF1
+UniProt:P37173 TGFBR2	neighbor-of	TGFB2
+NEDD4L	neighbor-of	UniProt:P62987 UBA52
+ITGB8	neighbor-of	UniProt:P06756 ITGAV
+ITGB5	neighbor-of	UniProt:P06756 ITGAV
+SMAD2	in-complex-with	MADH3
+TGFB3	in-complex-with	LTBP1
+SMAD2	in-complex-with	UBB
+SMAD2	in-complex-with	UBC
+UniProt:Q8N2S1 LTBP4	neighbor-of	UniProt:Q14767 LTBP2
+ITGB8	neighbor-of	TGFB3
+ITGB5	neighbor-of	TGFB3
+TGFB1	in-complex-with	UniProt:Q9NS15 LTBP3
+RNF55	neighbor-of	UniProt:P61081 UBE2M
+UniProt:P05106 ITGB3	neighbor-of	UniProt:P06756 ITGAV
+MADH3	in-complex-with	SMAD4
+MADH3	in-complex-with	STAG1
+UniProt:P62987 UBA52	neighbor-of	CHIP
+TGFB1	neighbor-of	AD-019
+TGFB2	controls-transport-of	TGFB1
+TGFBR3	controls-transport-of	FKBP1A
+SMAD2	in-complex-with	UniProt:Q9NYA4 MTMR4
+UniProt:P37173 TGFBR2	neighbor-of	NEDD8
+UniProt:P62979 RPS27A	neighbor-of	CHIP
+UBB	neighbor-of	USP25
+UBC	neighbor-of	USP25
+MADH7	in-complex-with	UniProt:P62979 RPS27A
+UniProt:P62987 UBA52	neighbor-of	USP25
+TGFB3	in-complex-with	UniProt:P06756 ITGAV
+UniProt:P37173 TGFBR2	in-complex-with	ALK5

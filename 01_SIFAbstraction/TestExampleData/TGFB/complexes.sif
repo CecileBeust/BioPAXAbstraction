@@ -1,0 +1,152 @@
+ALK5	in-complex-with	AD-019
+ALK5	in-complex-with	USP25
+SMAD2	in-complex-with	UniProt:Q9NYA4 MTMR4
+SMAD2	in-complex-with	STAG1
+SMAD2	in-complex-with	SMAD4
+ITGB8	in-complex-with	LTBP1
+UniProt:P05106 ITGB3	in-complex-with	LTBP1
+UniProt:P18564 ITGB6	in-complex-with	LTBP1
+ITGB5	in-complex-with	LTBP1
+UniProt:P37173 TGFBR2	in-complex-with	TGFBR3
+TGFB1	in-complex-with	PPP1CC
+TGFB1	in-complex-with	PPP1A
+TGFB1	in-complex-with	PPP1CB
+UniProt:P37173 TGFBR2	in-complex-with	UniProt:Q9HCE7 SMURF1
+UniProt:P37173 TGFBR2	in-complex-with	SMURF2
+MADH7	in-complex-with	PPP1CC
+MADH7	in-complex-with	PPP1A
+MADH7	in-complex-with	PPP1CB
+TGFB3	in-complex-with	UniProt:P06756 ITGAV
+TGFB1	in-complex-with	UniProt:P37173 TGFBR2
+NEDD4L	in-complex-with	NMA
+MAWD	in-complex-with	NMA
+NMA	in-complex-with	NMA
+ITGB1	in-complex-with	TGFB3
+TGFB1	in-complex-with	TGFBR3
+PPP1CC	in-complex-with	PPP1CC
+PPP1A	in-complex-with	PPP1CC
+PPP1CB	in-complex-with	PPP1CC
+UniProt:P37173 TGFBR2	in-complex-with	PPP1R15A
+MADH7	in-complex-with	XPO1
+ALK5	in-complex-with	SMAD2
+ALK5	in-complex-with	MADH7
+UniProt:P37173 TGFBR2	in-complex-with	MADH3
+ZFYVE9	in-complex-with	PPP1R15A
+UniProt:P53708 ITGA8	in-complex-with	LTBP1
+PPP1R15A	in-complex-with	PPP1CC
+PPP1R15A	in-complex-with	PPP1A
+PPP1R15A	in-complex-with	PPP1CB
+MADH3	in-complex-with	UniProt:Q9NYA4 MTMR4
+MADH3	in-complex-with	STAG1
+MADH3	in-complex-with	SMAD4
+MADH7	in-complex-with	AD-019
+MADH7	in-complex-with	USP25
+AD-019	in-complex-with	AD-019
+USP25	in-complex-with	AD-019
+TGFB1	in-complex-with	UniProt:P62979 RPS27A
+TGFB1	in-complex-with	UBC
+TGFB1	in-complex-with	UniProt:P62987 UBA52
+TGFB1	in-complex-with	UBB
+ZFYVE9	in-complex-with	MADH7
+TGFB2	in-complex-with	UniProt:Q9NS15 LTBP3
+UniProt:P37173 TGFBR2	in-complex-with	ZFYVE9
+TGFB1	in-complex-with	SMAD2
+UniProt:P37173 TGFBR2	in-complex-with	MADH7
+SMAD2	in-complex-with	UniProt:P62979 RPS27A
+SMAD2	in-complex-with	UBC
+SMAD2	in-complex-with	UniProt:P62987 UBA52
+SMAD2	in-complex-with	UBB
+ZFYVE9	in-complex-with	PPP1CC
+ZFYVE9	in-complex-with	PPP1A
+ZFYVE9	in-complex-with	PPP1CB
+ALK5	in-complex-with	FKBP1A
+UniProt:Q9HCE7 SMURF1	in-complex-with	XPO1
+ALK5	in-complex-with	MADH3
+UniProt:P37173 TGFBR2	in-complex-with	ALK5
+MADH3	in-complex-with	CHIP
+TGFB1	in-complex-with	MADH3
+UniProt:P37173 TGFBR2	in-complex-with	SMAD2
+SMAD2	in-complex-with	SMURF2
+TGFB1	in-complex-with	LTBP1
+ALK5	in-complex-with	PPP1CC
+ALK5	in-complex-with	PPP1A
+ALK5	in-complex-with	PPP1CB
+ALK5	in-complex-with	PPP1R15A
+LTBP1	in-complex-with	UniProt:P06756 ITGAV
+ZFYVE9	in-complex-with	SMAD2
+ALK5	in-complex-with	SMURF2
+TGFB1	in-complex-with	UniProt:P06756 ITGAV
+ITGB1	in-complex-with	LTBP1
+ALK5	in-complex-with	NEDD4L
+ALK5	in-complex-with	MAWD
+ALK5	in-complex-with	NMA
+ITGB8	in-complex-with	UniProt:P06756 ITGAV
+UniProt:P05106 ITGB3	in-complex-with	UniProt:P06756 ITGAV
+UniProt:P18564 ITGB6	in-complex-with	UniProt:P06756 ITGAV
+ITGB5	in-complex-with	UniProt:P06756 ITGAV
+UniProt:P37173 TGFBR2	in-complex-with	RNF55
+MADH7	in-complex-with	NEDD4L
+MADH7	in-complex-with	MAWD
+MADH7	in-complex-with	NMA
+ALK5	in-complex-with	ZFYVE9
+TGFB1	in-complex-with	ZFYVE9
+TGFB1	in-complex-with	UniProt:Q9HCE7 SMURF1
+ALK5	in-complex-with	UniProt:P62979 RPS27A
+ALK5	in-complex-with	UBC
+ALK5	in-complex-with	UniProt:P62987 UBA52
+ALK5	in-complex-with	UBB
+TGFB1	in-complex-with	UniProt:Q9NS15 LTBP3
+TGFB1	in-complex-with	NEDD4L
+TGFB1	in-complex-with	MAWD
+TGFB1	in-complex-with	NMA
+NEDD8	in-complex-with	UniProt:P61081 UBE2M
+TGFB1	in-complex-with	SMURF2
+AD-019	in-complex-with	AD-019
+USP25	in-complex-with	AD-019
+MADH7	in-complex-with	PPP1R15A
+ITGB1	in-complex-with	UniProt:P06756 ITGAV
+MADH7	in-complex-with	SMURF2
+ITGB1	in-complex-with	UniProt:P53708 ITGA8
+ITGB8	in-complex-with	TGFB3
+UniProt:P05106 ITGB3	in-complex-with	TGFB3
+UniProt:P18564 ITGB6	in-complex-with	TGFB3
+ITGB5	in-complex-with	TGFB3
+MADH7	in-complex-with	UniProt:P62979 RPS27A
+MADH7	in-complex-with	UBC
+MADH7	in-complex-with	UniProt:P62987 UBA52
+MADH7	in-complex-with	UBB
+TGFB1	in-complex-with	AD-019
+TGFB1	in-complex-with	USP25
+TGFB1	in-complex-with	UniProt:P53708 ITGA8
+TGFB3	in-complex-with	LTBP1
+TGFB3	in-complex-with	UniProt:Q9NS15 LTBP3
+TGFB2	in-complex-with	LTBP1
+TGFB1	in-complex-with	PPP1R15A
+TGFB1	in-complex-with	ITGB1
+TGFBR3	in-complex-with	TGFB2
+TGFB1	in-complex-with	ITGB8
+TGFB1	in-complex-with	UniProt:P05106 ITGB3
+TGFB1	in-complex-with	UniProt:P18564 ITGB6
+TGFB1	in-complex-with	ITGB5
+UniProt:P37173 TGFBR2	in-complex-with	TGFB2
+MADH3	in-complex-with	UniProt:P62979 RPS27A
+MADH3	in-complex-with	UBC
+MADH3	in-complex-with	UniProt:P62987 UBA52
+MADH3	in-complex-with	UBB
+ZFYVE9	in-complex-with	MADH3
+TGFB1	in-complex-with	ALK5
+UBC	in-complex-with	AD-019
+UBC	in-complex-with	USP25
+UBB	in-complex-with	AD-019
+UBB	in-complex-with	USP25
+UniProt:P62979 RPS27A	in-complex-with	UBC
+UBC	in-complex-with	UBC
+UniProt:P62987 UBA52	in-complex-with	UBC
+UBB	in-complex-with	UBC
+TGFB1	in-complex-with	UniProt:Q8N2S1 LTBP4
+MADH7	in-complex-with	UniProt:Q9HCE7 SMURF1
+ALK5	in-complex-with	UniProt:Q9HCE7 SMURF1
+SMAD2	in-complex-with	MADH3
+TGFB1	in-complex-with	MADH7
+AD-019	in-complex-with	AD-019
+USP25	in-complex-with	AD-019
