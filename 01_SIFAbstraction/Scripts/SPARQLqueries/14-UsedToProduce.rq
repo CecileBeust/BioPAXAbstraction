@@ -13,16 +13,15 @@ PREFIX reactome: <http://www.reactome.org/biopax/91/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
-  ?pathway abstraction:NextStepPathway ?nextPathway
+  ?smallMolecule1 abstraction:usedToProduce ?smallMolecule2 .
 }
 WHERE {
-  ?pathway rdf:type bp3:Pathway .
-  ?nextPathway rdf:type bp3:Pathway .
-  
-  ?pathway bp3:pathwayOrder ?pathwayStep .
-  ?nextPathway bp3:pathwayOrder ?nextStep .
-  
-  ?pathwayStep bp3:nextStep ?nextStep .
-  
-  FILTER (?pathway != ?nextPathway)
+  ?smallMolecule1 rdf:type bp3:SmallMolecule .
+  ?smallMolecule2 rdf:type bp3:SmallMolecule .
+ 
+  ?reaction bp3:left ?smallMolecule1 .
+  ?reaction bp3:right ?smallMolecule2 .
+  ?reaction rdf:type bp3:BiochemicalReaction .
+ 
+  FILTER (?smallMolecule1 != ?smallMolecule2)
 }

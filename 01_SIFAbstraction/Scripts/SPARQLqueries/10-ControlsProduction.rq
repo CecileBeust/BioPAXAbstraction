@@ -13,16 +13,20 @@ PREFIX reactome: <http://www.reactome.org/biopax/91/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
-  ?pathway abstraction:NextStepPathway ?nextPathway
+  ?enzymeProt abstraction:ControlsProductionOf ?product
 }
 WHERE {
-  ?pathway rdf:type bp3:Pathway .
-  ?nextPathway rdf:type bp3:Pathway .
+  # Core reaction pattern
+  ?reaction rdf:type bp3:BiochemicalReaction .
+ 
+  ?reaction bp3:left ?reactant .
+  ?reaction bp3:right ?product .
+  ?reactant rdf:type bp3:SmallMolecule .
+  ?product rdf:type bp3:SmallMolecule .
   
-  ?pathway bp3:pathwayOrder ?pathwayStep .
-  ?nextPathway bp3:pathwayOrder ?nextStep .
-  
-  ?pathwayStep bp3:nextStep ?nextStep .
-  
-  FILTER (?pathway != ?nextPathway)
+  ?catalysis bp3:controlled ?reaction .
+  ?catalysis rdf:type bp3:Catalysis .
+  ?catalysis bp3:controller ?enzyme .
+  ?enzyme ((bp3:component|bp3:memberPhysicalEntity)*) ?enzymeProt .
+  ?enzymeProt rdf:type bp3:Protein .
 }

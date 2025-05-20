@@ -13,16 +13,11 @@ PREFIX reactome: <http://www.reactome.org/biopax/91/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
-  ?pathway abstraction:NextStepPathway ?nextPathway
+  ?subPathway abstraction:IsAChildOf ?pathway .
 }
 WHERE {
   ?pathway rdf:type bp3:Pathway .
-  ?nextPathway rdf:type bp3:Pathway .
   
-  ?pathway bp3:pathwayOrder ?pathwayStep .
-  ?nextPathway bp3:pathwayOrder ?nextStep .
-  
-  ?pathwayStep bp3:nextStep ?nextStep .
-  
-  FILTER (?pathway != ?nextPathway)
+  ?pathway bp3:pathwayComponent ?subPathway .
+  ?subPathway rdf:type bp3:Pathway .
 }

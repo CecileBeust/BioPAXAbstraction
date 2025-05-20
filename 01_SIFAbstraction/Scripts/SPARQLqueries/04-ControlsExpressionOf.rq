@@ -12,18 +12,19 @@ PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
 PREFIX reactome: <http://www.reactome.org/biopax/91/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
-SELECT DISTINCT ?Pathway1 ?Pathway2anc
-#CONSTRUCT {
-#  ?Pathway1 abstraction:NextStepPathway ?Pathway2anc .
-#}
-WHERE {  
-  ?Pathway1 rdf:type bp3:Pathway .
-  ?Pathway1 bp3:pathwayOrder ?PathwayStep1 .
-  ?pathwayStep1 bp3:nextStep ?PathwayStep2 .
-  ?Pathway2 bp3:pathwayOrder ?PathwayStep2 .
-  ?Pathway2 rdf:type bp3:Pathway .
-  FILTER (?Pathway1 != ?Pathway2) # not logically-necessary, but might improve performances
-  ?Pathway2anc bp3:pathwayComponent* ?Pathway2 .
-  ?Pathway2anc rdf:type bp3:Pathway .
-  FILTER NOT EXISTS { ?Pathway2anc bp3:pathwayComponent* ?Pathway1 }
+CONSTRUCT {
+  ?enzymeProt abstraction:ControlsExpressionOf ?productProt
+}
+WHERE {
+  # core template reaction pattern
+  ?tr rdf:type bp3:TemplateReaction .
+  ?tr bp3:product ?product .
+  ?product ((bp3:component|bp3:memberPhysicalEntity)*) ?productProt .
+  ?productProt rdf:type bp3:Protein .
+  
+  ?catalysis bp3:controlled ?tr .
+  ?catalysis rdf:type bp3:TemplateReactionRegulation .
+  ?catalysis bp3:controller ?enzyme .
+  ?enzyme ((bp3:component|bp3:memberPhysicalEntity)*) ?enzymeProt .
+  ?enzymeProt rdf:type bp3:Protein .
 }

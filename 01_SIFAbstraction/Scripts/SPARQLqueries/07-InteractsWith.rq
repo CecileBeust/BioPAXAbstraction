@@ -13,16 +13,18 @@ PREFIX reactome: <http://www.reactome.org/biopax/91/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
-  ?pathway abstraction:NextStepPathway ?nextPathway
+  ?Prot1 abstraction:InteractsWith ?Prot2
 }
 WHERE {
-  ?pathway rdf:type bp3:Pathway .
-  ?nextPathway rdf:type bp3:Pathway .
+  # Core molecular interaction pattern
+  ?MolecularInteraction (rdf:type/rdfs:subClassOf*) bp3:MolecularInteraction .
+  ?MolecularInteraction bp3:participant ?Participant1 .
+  ?MolecularInteraction bp3:participant ?Participant2 .
   
-  ?pathway bp3:pathwayOrder ?pathwayStep .
-  ?nextPathway bp3:pathwayOrder ?nextStep .
+  ?Participant1 ((bp3:component|bp3:memberPhysicalEntity)*) ?Prot1 .
+  ?Prot1 rdf:type bp3:Protein .
+  ?Participant2 ((bp3:component|bp3:memberPhysicalEntity)*) ?Prot2 .
+  ?Prot2 rdf:type bp3:Protein .
   
-  ?pathwayStep bp3:nextStep ?nextStep .
-  
-  FILTER (?pathway != ?nextPathway)
+  FILTER (STR(?Prot1) < STR(?Prot2))
 }

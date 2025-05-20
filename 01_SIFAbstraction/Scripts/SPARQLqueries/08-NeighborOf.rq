@@ -1,0 +1,51 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX chebi: <http://purl.obolibrary.org/obo/chebi/>
+PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
+PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
+PREFIX reactome: <http://www.reactome.org/biopax/91/48887#>
+PREFIX abstraction:<http://abstraction/#>
+
+CONSTRUCT {
+   ?Protein1 abstraction:NeighborOf ?Protein2
+}
+WHERE {
+  ?interaction (rdf:type/rdfs:subClassOf*) bp3:Interaction .
+ 
+  {
+	# Case 1: Both proteins are participants in the same interaction
+	?interaction ?interactingProperties1 ?interactor1 .
+	?interaction ?interactingProperties2 ?interactor2 .
+    
+	VALUES ?interactingProperties1 { bp3:participant bp3:left bp3:right }
+	VALUES ?interactingProperties2 { bp3:participant bp3:left bp3:right }
+    
+    ?interactor1 ((bp3:component|bp3:memberPhysicalEntity)*) ?Protein1 .
+    ?interactor2 ((bp3:component|bp3:memberPhysicalEntity)*) ?Protein2 .
+  }
+ 
+  UNION
+ 
+  {
+	# Case 2: One protein is a participant and one is a controller
+	?interaction ?interactingProperties ?interactor .
+	VALUES ?interactingProperties { bp3:participant bp3:left bp3:right }
+    
+    ?interactor ((bp3:component|bp3:memberPhysicalEntity)*) ?Protein1 .
+    
+    ?catalysis bp3:controlled ?reaction2 .
+    ?catalysis rdf:type bp3:Catalysis .
+    ?catalysis bp3:controller ?enzyme .
+    ?enzyme ((bp3:component|bp3:memberPhysicalEntity)*) ?Protein2 .
+    ?Protein2 rdf:type bp3:Protein .
+  }
+ 
+  # avoir self pairs and duplicates
+  FILTER(STR(?Protein1) < STR(?Protein2))
+}

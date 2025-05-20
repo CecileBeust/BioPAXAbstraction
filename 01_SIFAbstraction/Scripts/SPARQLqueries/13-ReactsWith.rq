@@ -12,18 +12,16 @@ PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
 PREFIX reactome: <http://www.reactome.org/biopax/91/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
-SELECT DISTINCT ?Pathway1 ?Pathway2anc
-#CONSTRUCT {
-#  ?Pathway1 abstraction:NextStepPathway ?Pathway2anc .
-#}
-WHERE {  
-  ?Pathway1 rdf:type bp3:Pathway .
-  ?Pathway1 bp3:pathwayOrder ?PathwayStep1 .
-  ?pathwayStep1 bp3:nextStep ?PathwayStep2 .
-  ?Pathway2 bp3:pathwayOrder ?PathwayStep2 .
-  ?Pathway2 rdf:type bp3:Pathway .
-  #FILTER (?Pathway1 != ?Pathway2) # not logically-necessary, but might improve performances
-  ?Pathway2anc bp3:pathwayComponent* ?Pathway2 .
-  ?Pathway2anc rdf:type bp3:Pathway .
-  FILTER NOT EXISTS { ?Pathway2anc bp3:pathwayComponent* ?Pathway1 }
+CONSTRUCT {
+  ?smallMolecule1 abstraction:reactsWith ?smallMolecule2 .
+}
+WHERE {
+  ?smallMolecule1 rdf:type bp3:SmallMolecule .
+  ?smallMolecule2 rdf:type bp3:SmallMolecule .
+ 
+  ?reaction bp3:left ?smallMolecule1 .
+  ?reaction bp3:left ?smallMolecule2 .
+  ?reaction rdf:type bp3:BiochemicalReaction .
+ 
+  FILTER (STR(?smallMolecule1) < STR(?smallMolecule2))
 }
