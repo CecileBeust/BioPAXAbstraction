@@ -1,9 +1,0 @@
-LTC4S	catalysis-precedes	GPX4
-LTC4S	catalysis-precedes	UniProt:P07203 GPX1
-LTC4S	catalysis-precedes	GPX2
-UniProt:P20292 ALOX5AP	catalysis-precedes	GPX4
-UniProt:P20292 ALOX5AP	catalysis-precedes	UniProt:P07203 GPX1
-UniProt:P20292 ALOX5AP	catalysis-precedes	GPX2
-LOG5	catalysis-precedes	GPX4
-LOG5	catalysis-precedes	UniProt:P07203 GPX1
-LOG5	catalysis-precedes	GPX2

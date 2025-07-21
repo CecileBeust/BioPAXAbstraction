@@ -1,4 +1,0 @@
-LOG5	neighbor-of	LTC4S
-LTC4S	neighbor-of	LTC4S
-GPX4	neighbor-of	GPX4
-GPX2	neighbor-of	GPX4
