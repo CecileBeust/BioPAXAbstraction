@@ -9,7 +9,7 @@ PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
 PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
-PREFIX reactome: <http://www.reactome.org/biopax/91/48887#>
+PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
@@ -48,4 +48,34 @@ WHERE {
  
   # avoir self pairs and duplicates
   FILTER(STR(?Protein1) < STR(?Protein2))
+}
+
+CONSTRUCT {
+   ?protein1 abstraction:NeighborOf ?protein2
+}
+WHERE {
+  ?reaction rdf:type/(rdfs:subClassOf*) bp3:Interaction .
+  
+  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right)/((bp3:component|bp3:memberPhysicalEntity)*) ?protein1 .
+  ?protein1 rdf:type bp3:Protein .
+  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right)/((bp3:component|bp3:memberPhysicalEntity)*) ?protein2 .
+  ?protein2 rdf:type bp3:Protein .
+  FILTER (STR(?protein1) < STR(?protein2))
+  
+  OPTIONAL { ?protein1 bp3:displayName ?protein1Label . }
+  OPTIONAL {
+    ?protein1 bp3:xref [
+      bp3:db "Reactome" ;
+      bp3:id ?protein1ID
+    ] .
+  }
+  
+  OPTIONAL { ?protein2 bp3:displayName ?protein2Label . }
+  OPTIONAL {
+    ?protein2 bp3:xref [
+      bp3:db "Reactome" ;
+      bp3:id ?protein2ID
+    ] .
+  }
+  
 }

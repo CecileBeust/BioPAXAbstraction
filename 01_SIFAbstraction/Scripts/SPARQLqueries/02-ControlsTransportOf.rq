@@ -9,7 +9,7 @@ PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
 PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
-PREFIX reactome: <http://www.reactome.org/biopax/91/48887#>
+PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
@@ -28,16 +28,15 @@ WHERE {
 
   # Define cellular locations for Protein 1 and Protein 2
   ?protLeft bp3:cellularLocation ?cellularLocVocab1 .
-  ?cellularLocVocab1 bp3:term ?location1 .
   ?protRight bp3:cellularLocation ?cellularLocVocab2 .
-  ?cellularLocVocab2 bp3:term ?location2 .
   
   ?catalysis bp3:controlled ?reaction .
-  ?catalysis rdf:type bp3:Catalysis .
+  ?catalysis (rdf:type/rdfs:subClassOf*) bp3:Control .
   ?catalysis bp3:controller ?enzyme .
   ?enzyme ((bp3:component|bp3:memberPhysicalEntity)*) ?enzymeProt .
   ?enzymeProt rdf:type bp3:Protein .
 
   # Ensure cellular locations of protein 1 and protein 2 are different + ensure that they have the same reference
   FILTER (?cellularLocVocab1 != ?cellularLocVocab2)
+  FILTER (?enzymeProt != ?protLeft)
 }

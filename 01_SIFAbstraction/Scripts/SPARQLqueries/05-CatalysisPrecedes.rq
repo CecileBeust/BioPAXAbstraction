@@ -9,40 +9,40 @@ PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
 PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
-PREFIX reactome: <http://www.reactome.org/biopax/91/48887#>
+PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
-   ?enzymeProt1 abstraction:CatalysisPrecedes ?enzymeProt2
+   ?enzymeProtA abstraction:CatalysisPrecedes ?enzymeProtB
 }
 WHERE {
-  
-  ?reaction1 rdf:type/(rdfs:subClassOf*) bp3:BiochemicalReaction .
-
-  ?reaction1 bp3:left/((bp3:component|bp3:memberPhysicalEntity)*) ?protLeft1 .
-  ?protLeft1 rdf:type bp3:SmallMolecule .
-  ?reaction1 bp3:right/((bp3:component|bp3:memberPhysicalEntity)*) ?protRight1 .
-  ?protRight1 rdf:type bp3:SmallMolecule .
+  ?reaction1 rdf:type/(rdfs:subClassOf*) bp3:Conversion .
+  ?reaction1 bp3:xref [
+    bp3:db "Reactome" ;
+    bp3:id ?reaction1ID
+  ] .
   
   ?catalysis1 bp3:controlled ?reaction1 .
-  ?catalysis1 rdf:type bp3:Catalysis .
-  ?catalysis1 bp3:controller ?enzyme1 .
-  ?enzyme1 ((bp3:component|bp3:memberPhysicalEntity)*) ?enzymeProt1 .
-  ?enzymeProt1 rdf:type bp3:Protein .
+  ?catalysis1 (rdf:type/rdfs:subClassOf*) bp3:Control .
+  ?catalysis1 bp3:controller ?enzymeA .
+  ?enzymeA ((bp3:component|bp3:memberPhysicalEntity)*) ?enzymeProtA .
+  ?enzymeProtA rdf:type bp3:Protein .
   
-  ?reaction2 rdf:type/(rdfs:subClassOf*) bp3:BiochemicalReaction .
-
-  ?reaction2 bp3:left/((bp3:component|bp3:memberPhysicalEntity)*) ?protLeft2 .
-  ?protLeft2 rdf:type bp3:SmallMolecule .
-  ?reaction2 bp3:right/((bp3:component|bp3:memberPhysicalEntity)*) ?protRight2 .
-  ?protRight2 rdf:type bp3:SmallMolecule .
+  ?reaction1 bp3:right/((bp3:component|bp3:memberPhysicalEntity)*) ?connectingMolecule .
+  ?reaction2 bp3:left/((bp3:component|bp3:memberPhysicalEntity)*) ?connectingMolecule .
+  ?connectingMolecule rdf:type bp3:SmallMolecule .
+  
+  ?reaction2 rdf:type/(rdfs:subClassOf*) bp3:Conversion .
+  ?reaction2 bp3:xref [
+    bp3:db "Reactome" ;
+    bp3:id ?reaction2ID
+  ] .
   
   ?catalysis2 bp3:controlled ?reaction2 .
-  ?catalysis2 rdf:type bp3:Catalysis .
-  ?catalysis2 bp3:controller ?enzyme1 .
-  ?enzyme2 ((bp3:component|bp3:memberPhysicalEntity)*) ?enzymeProt2 .
-  ?enzymeProt2 rdf:type bp3:Protein .
+  ?catalysis2 (rdf:type/rdfs:subClassOf*) bp3:Control .
+  ?catalysis2 bp3:controller ?enzymeB .
+  ?enzymeB ((bp3:component|bp3:memberPhysicalEntity)*) ?enzymeProtB .
+  ?enzymeProtB rdf:type bp3:Protein .
 
-  # Ensure the controllers of the two reactions are not the same
-  FILTER (?enzymeProt1 != ?enzymeProt2)
+  FILTER (?enzymeA != ?enzymeB)
 }
